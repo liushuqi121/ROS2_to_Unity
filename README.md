@@ -2,7 +2,7 @@
 
 ## 一、环境配置
 
-参考：（github链接）
+参考：（https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md）
 
 ### Ubuntu环境下
 
@@ -12,7 +12,10 @@
 
 #### 2.下载ROS-TCP-Endpoint放在工作空间编译
 
-2. ROS-TCP-Endpoint下载地址：（链接）
+2. ROS-TCP-Endpoint下载地址：（https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector
+   
+https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.visualizations
+）
 
 ### Unity环境下
 
@@ -22,7 +25,7 @@
 
   - 本地导入：将包下载到本地，添加来自磁盘的包。通常后缀名为package.json
 
-- URL导入：将github链接复制粘贴进去自动导入。（链接）
+- URL导入：将github链接复制粘贴进去自动导入。
 
 导入成功如下：
 
