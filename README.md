@@ -21,7 +21,7 @@ https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robo
 
 1.创建新项目，在Window/Package Manager下导入两个包(方式有两个，本地导入和URL导入)
 
-![image.png](https://tc-cdn.flowus.cn/oss/761a199b-3ea5-4b7f-99c1-4445a97093f5/image.png?time=1745475300&token=73e35aa6ed67ebce346cd4e56a90de210f7faf605a5ac8201ea916b5f2a367a0&role=free)
+
 
   - 本地导入：将包下载到本地，添加来自磁盘的包。通常后缀名为package.json
 
@@ -29,14 +29,11 @@ https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robo
 
 导入成功如下：
 
-![image.png](https://tc-cdn.flowus.cn/oss/213b34c3-6c16-43f5-888c-4bb8c549167b/image.png?time=1745475300&token=65909f44cbc0e8d9872429796076507885757d9a2e68e2b5375ad3da1006d8b1&role=free)
 
-![image.png](https://tc-cdn.flowus.cn/oss/87faf304-b375-4040-92e0-584dd5c881ac/image.png?time=1745475300&token=b6dd02db17b490252b4cb85fce3e7f1a612e5f4715bcb78e8973715d43797cd3&role=free)
 
   在Unity上方栏多出了Robotics选项，点击Robotics下面的ROS Settings进行配置，主要是两个ROS IP Address和ROS Port，关于ROS IP Address在ubuntu下用ifconfig查一下设置[ROS-TCP-Endpoint-0.7.0.zip](https://github.com/user-attachments/files/19888188/ROS-TCP-Endpoint-0.7.0.zip)
 ，然后端口任意了默认10000了。
 
-![image.png](https://tc-cdn.flowus.cn/oss/250bbdaa-109b-44f4-8afc-9c62af5fc918/image.png?time=1745476200&token=28594d6bf0e4cd8fde867df919e08e9779aab6e37144903d66ac9ac45261064d&role=free)
 
 到目前为止，两方的环境配置就结束了。
 
@@ -50,7 +47,6 @@ Ubuntu环境
 Unity环境下
 **点击“Robotics -> Generate ROS Messages…”
 
-![image.png](https://tc-cdn.flowus.cn/oss/be907fc4-7041-43a5-93d5-1524ca45a399/image.png?time=1745477100&token=becab28b39e73bdacbdb84b352b386129aad3d6a8ed6ab092d935a5e7e885794&role=free)
 
 那个ROS message path是把整个项目下载下来tutorials/ros_unity_integration/ros_packages/unity_robotics_demo_msgs文件夹，最后再Build两个一下(为了换成C#文件)
 
@@ -90,9 +86,10 @@ public class RosSubscriberExample : MonoBehaviour
 
 运行时出现下面的框，为蓝色时代表连接成功，红色是失败
 
-![image.png](blob:https://flowus.cn/3c84eb62-cf48-4a9c-b651-b645beb64aa4)
 
 在ubuntu工作空间下，ros2 run unity_robotics_demo color_publisher
 
 会发布对应信息并发布，此时在unity的控制台会看到与Ubuntu发布的消息。
 
+https://flowus.cn/share/5f63ea06-2b86-4800-b600-bfc0ba271b59?code=JUUFGX
+【FlowUs 息流】ROS2_to_Unity
